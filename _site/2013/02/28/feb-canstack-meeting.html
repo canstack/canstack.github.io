@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>#canstack - The Canadian OpenStack Users Group</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="/">Home</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">#canstack</h1>
+        <p class="lead blog-description">The Canadian OpenStack User Group</p>
+      </div>
+
+      <div class="row">
+
+              <div class="col-sm-8 blog-main">
+
+              <h2>Wrap up of Feb 2013 CanStack Meeting</h2>
+<p class="meta">28 Feb 2013</p>
+
+<div class="post">
+<p>On Thursday, February 28th, 2013, ten people called in from across Canada–and the world actually as we had one caller log in from Bangalore–to talk about what’s happening with regards to OpenStack in Canada.</p>
+
+<h2 id="attendees">Attendees</h2>
+
+<ul>
+  <li>Sandy Walsh (Halifax)</li>
+  <li>Anita Kuno (Haliburton, ON)</li>
+  <li>Jacob Godin (Halifax)</li>
+  <li>Neil Jubinville (Edmonton)</li>
+  <li>Wendy Simard (Edmonton)</li>
+  <li>Curtis Collicutt (Edmonton)</li>
+  <li>Matthew Delaney (Edmonton)</li>
+  <li>David Ackerman (Edmonton)</li>
+  <li>Luke Tymowski (Calgary)</li>
+  <li>Kurin Murari (Bangalore, India)</li>
+</ul>
+
+<h2 id="what-we-talked-about">What we talked about</h2>
+
+<h3 id="hardware">Hardware</h3>
+
+<p>We talked a little about hardware, mostly Dell-based. Cybera predominantly uses the C6220 and it’s previous generation. Others are using the Dell R410, 420 type systems. </p>
+
+<p>Luke mentioned that if you decide to use the C6620 make sure to have a spare chassis for testing when something goes wrong and you have to troubleshoot with Dell technicians.</p>
+
+<h3 id="rackspace-automation">Rackspace automation</h3>
+
+<p>Sandy gave us a bit of an idea as to how Rackspace runs their infrastructure.</p>
+
+<p>They have invested heavily in automation and testing. They run a week or two behind OpenStack’s trunk <em>in production</em>, and can do so because of the automation. A lot of what they do is run out of <a href="http://jenkins-ci.org/">Jenkins</a> and they prefer to make one or two changes at a time, but often, rather than many changes less often.</p>
+
+<h3 id="stacktach-and-ceilometer">Stacktach and Ceilometer</h3>
+
+<p>Sandy is also a developer on <a href="https://github.com/rackspace/stacktach which is a monitoring/">Stacktach</a>metering system for OpenStack. Stacktach can help organizations to do billing and other analysis. For example Cybera is using Stacktack to <a href="https://lists.launchpad.net/openstack/msg20884.html">report Microsoft license usage in OpenStack</a>.</p>
+
+<p>Sandy mentioned that Rackspace will be folding Stacktach into the newish <a href="https://wiki.openstack.org/wiki/Ceilometer">Ceilometer</a> project.</p>
+
+<h3 id="puppet-chef-jclouds-ansible-juju-crowbar-etc">Puppet, Chef, JClouds, Ansible, Juju, Crowbar, etc</h3>
+
+<p>We also had a bit of a discussion about the various automation (ie. devops) systems out there, and cloud frameworks like <a href="http://www.jclouds.org/documentation/gettingstarted/what-is-jclouds/">JClouds</a>. </p>
+
+<p>I think the general agreement was use whatever you want, just start using it now!</p>
+
+<h3 id="over-committing-in-openstack">Over committing in OpenStack</h3>
+
+<p>Neil was also interested in have some kind of “hackday” regarding over committing in OpenStack. He wants to be able to see how far he can push OpenStack and the hardware it’s running on so that once a cloud is launched they have a better idea of what it’s capable of doing, rather than staying conservative with resource allocation. Because once you launch, it’s hard to know.</p>
+
+<p>I have done a bit of work around <a href="http://serverascode.com/2013/02/20/overcommitting-with-kvm.html">over committing with KVM</a>, so of course that interests me. :)</p>
+
+<p>We’ll see if we can fit in a hackday sometime in the future.</p>
+
+<h3 id="what-we-decided-about-meetings">What we decided about meetings</h3>
+
+<ul>
+  <li>We would like to have monthly meetings, though we will probably not have meetings in July, August, and December, so we’ll have 7 more meetings this calendar year.</li>
+  <li>At the next meeting we would like to talk about some of the new things that have changed in OpenStack since our last meeting in June of 2012 (which was a long time ago), and considering the rate of development in OpenStack, a lot has changed. There was a lot of interest in how OpenStack operators are using and troubleshooting Quantum, ie. software defined networking.</li>
+  <li>Hopefully at the next meeting we’ll also be able to bring in some of the people that are <a href="http://www.openstack.org/blog/2013/02/bring-on-the-crazy-zero-to-book-in-five-days/">writing an OpenStack operators manual in five days</a></li>
+  <li>Everyone seemed to like the Bluejeans video/voice conference system, so that’s a good sign for future meetings.</li>
+</ul>
+
+<h3 id="todo">Todo</h3>
+
+<ul>
+  <li>Anita suggested we set up an IRC channel. I’ll be looking into this soon.</li>
+  <li>Setup a poll with a possible monthly date, eg. the 3rd Thursday, or 2nd Tuesday kind of thing, and set the time and date for the March meeting.</li>
+</ul>
+
+<p>As always, if you have suggestions, comments, criticisms or corrections, please let me know in the comments or by tweeting <a href="http://twitter.com/canstack">@canstack</a> and I will make sure to update this post.</p>
+
+
+</div>
+
+
+
+   
+              </div><!-- /.blog-main -->
+
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>#canstack is a cross-Canada OpenStack users group.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="http://twitter.com/canstack">Twitter</a></li>
+              <li><a href="http://www.meetup.com/Canadian-OpenStack-Users-Group/">Meetup.com</a></li>
+              <li><a href="http://github.com/canstack">Github</a></li>
+              <li>IRC - Freenode #canstack</li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <div class="blog-footer">
+      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/docs.min.js"></script>
+  </body>
+</html>

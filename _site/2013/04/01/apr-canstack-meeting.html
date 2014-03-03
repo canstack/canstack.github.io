@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>#canstack - The Canadian OpenStack Users Group</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="/">Home</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">#canstack</h1>
+        <p class="lead blog-description">The Canadian OpenStack User Group</p>
+      </div>
+
+      <div class="row">
+
+              <div class="col-sm-8 blog-main">
+
+              <h2>Wrap up of March 2013 CanStack Meeting</h2>
+<p class="meta">01 Apr 2013</p>
+
+<div class="post">
+<p>On Thursday, March 28th, 2013, nine people called in from across Canada to talk about what’s happening with regards to OpenStack in Canada.</p>
+
+<h2 id="attendees">Attendees</h2>
+
+<ul>
+  <li>Anita Kuno (Haliburton, ON)</li>
+  <li>Curtis Collicutt (Edmonton)</li>
+  <li>Barton Satchwill (Edmonton)</li>
+  <li>Matthew Delaney (Edmonton)</li>
+  <li>Alex Valiushko (Edmonton)</li>
+  <li>David Ackerman (Edmonton)</li>
+  <li>John Shillingtong (Edmonton)</li>
+  <li>Jason van Gaal (Ottawa)</li>
+  <li>Jordan Dohms (Edmonton)</li>
+</ul>
+
+<h2 id="poorly-timed">Poorly timed</h2>
+
+<p>Unfortunately, I made a mistake in setting up the date for this meeting–I set it on the Thursday of a Friday long weekend. But, we had a poll and decided not to change the time. So this meeting was a bit shorter as we all wanted to get on with our long weekend. Lesson learned! :)</p>
+
+<h2 id="what-we-talked-about">What we talked about</h2>
+
+<h3 id="configuration-management">Configuration management</h3>
+
+<p>Configuration management and OpenStack go hand-in-hand. I imagine each meeting will have a bit of discussion regarding configuration management.</p>
+
+<p>We talked a bit about the usual suspects–chef and puppet–but we also discussed <a href="http://saltstack.com/">Salt</a>, which is a configuration and orchestration system written in Python, and because OpenStack is also mostly written in Python, it might make sense to use Salt stack in specific cases, especially if developers are already working with Python.</p>
+
+<h3 id="learning-how-to-contribute-code-to-openstack">Learning how to contribute code to OpenStack</h3>
+
+<p>We talked about how on the Friday previous to the #canstack meeting <a href="https://twitter.com/anteaya">Anita</a> spent 4.5 hours with a group of us from Cybera going over the procedure and setup of a development environment to contribute to OpenStack. Surprisingly, even with that much time we weren’t quite able to submit a patch, mostly because we ran into a swift bug.</p>
+
+<p>We’re going to continue this process in the next couple of weeks, and hopefully we’ll see some Cybera staff having contributed patches to OpenStack.</p>
+
+<h3 id="updating-openstack-releases">Updating OpenStack releases</h3>
+
+<p>One of the bigger topics in discussion was updating between OpenStack releases. </p>
+
+<p>Basically, no one in the room had ever really upgraded between releases. In most cases the upgrade wasn’t really an upgrade so much as a complete reinstall, otherwise known as a “forklift upgrade.” So we didn’t have any good answers to that issue, and it’s something we want to explore in future meeting.</p>
+
+<p>Here are a few links that Anita provided that might help in learning about upgrading from one OpenStack release to another.</p>
+
+<ul>
+  <li><a href="https://github.com/openstack-dev/grenade">https://github.com/openstack-dev/grenade</a></li>
+  <li><a href="http://docs.openstack.org/essex/openstack-compute/install/yum/content/ch_migrating-from-diablo.html">http://docs.openstack.org/essex/openstack-compute/install/yum/content/ch_migrating-from-diablo.html</a></li>
+  <li><a href="http://docs.openstack.org/trunk/openstack-ops/content/maintenance.html#upgrades">http://docs.openstack.org/trunk/openstack-ops/content/maintenance.html#upgrades</a></li>
+</ul>
+
+<p>Also, we were all curious as to exactly how Rackspace is staying within a couple weeks of trunk.</p>
+
+<p>At some point OpenStack will have to support upgrades.</p>
+
+<h3 id="next-meeting">Next meeting</h3>
+
+<p>The next meeting will be just after the <a href="http://www.openstack.org/summit/portland-2013/">Portand OpenStack summit</a>, so I’m sure it will be a lively one filled with new information about OpenStack, especially the Grizzly release. </p>
+
+</div>
+
+
+
+   
+              </div><!-- /.blog-main -->
+
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>#canstack is a cross-Canada OpenStack users group.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="http://twitter.com/canstack">Twitter</a></li>
+              <li><a href="http://www.meetup.com/Canadian-OpenStack-Users-Group/">Meetup.com</a></li>
+              <li><a href="http://github.com/canstack">Github</a></li>
+              <li>IRC - Freenode #canstack</li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <div class="blog-footer">
+      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/docs.min.js"></script>
+  </body>
+</html>

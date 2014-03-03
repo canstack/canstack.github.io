@@ -1,0 +1,44 @@
+<p><img src="http://canstack.ca/images/blog/edmonton_cyberport1.jpg" alt="" /><br />
+<em>(Cybera&#8217;s conference room in Edmonton. I forgot to take a picture with everyone there.)</em></p>
+<p class="meta">28 February &#8211; 2013 &#8211; Edmonton, and across Canada!</p>
+<h1>Wrap up of Feb 2013 CanStack Meeting</h1>
+<p>On Thursday, February 28th, 2013, ten people called in from across Canada&#8212;and the world actually as we had one caller log in from Bangalore&#8212;to talk about what&#8217;s happening with regards to OpenStack in Canada.</p>
+<h2>Attendees</h2>
+<p>- Sandy Walsh (Halifax)<br />
+- Anita Kuno (Haliburton, ON)<br />
+- Jacob Godin (Halifax)<br />
+- Neil Jubinville (Edmonton)<br />
+- Wendy Simard (Edmonton)<br />
+- Curtis Collicutt (Edmonton)<br />
+- Matthew Delaney (Edmonton)<br />
+- David Ackerman (Edmonton)<br />
+- Luke Tymowski (Calgary)<br />
+- Kurin Murari (Bangalore, India)</p>
+<h2>What we talked about</h2>
+<h3>Hardware</h3>
+<p>We talked a little about hardware, mostly Dell-based. Cybera predominantly uses the C6220 and it&#8217;s previous generation. Others are using the Dell R410, 420 type systems.</p>
+<p>Luke mentioned that if you decide to use the C6620 make sure to have a spare chassis for testing when something goes wrong and you have to troubleshoot with Dell technicians.</p>
+<h3>Rackspace automation</h3>
+<p>Sandy gave us a bit of an idea as to how Rackspace runs their infrastructure.</p>
+<p>They have invested heavily in automation and testing. They run a week or two behind OpenStack&#8217;s trunk <strong>in production</strong>, and can do so because of the automation. A lot of what they do is run out of <a href="http://jenkins-ci.org/">Jenkins</a> and they prefer to make one or two changes at a time, but often, rather than many changes less often.</p>
+<h3>Stacktach and Ceilometer</h3>
+<p>Sandy is also a developer on <a href="https://github.com/rackspace/stacktach">Stacktach</a> which is a monitoring/metering system for OpenStack. Stacktach can help organizations to do billing and other analysis. For example Cybera is using Stacktack to <a href="https://lists.launchpad.net/openstack/msg20884.html">report Microsoft license usage in OpenStack</a>.</p>
+<p>Sandy mentioned that Rackspace will be folding Stacktach into the newish <a href="https://wiki.openstack.org/wiki/Ceilometer">Ceilometer</a> project.</p>
+<h3>Puppet, Chef, JClouds, Ansible, Juju, Crowbar, etc</h3>
+<p>We also had a bit of a discussion about the various automation (ie. devops) systems out there, and cloud frameworks like <a href="http://www.jclouds.org/documentation/gettingstarted/what-is-jclouds/">JClouds</a>.</p>
+<p>I think the general agreement was use whatever you want, just start using it now!</p>
+<h3>Over committing in OpenStack</h3>
+<p>Neil was also interested in have some kind of &#8220;hackday&#8221; regarding over committing in OpenStack. He wants to be able to see how far he can push OpenStack and the hardware it&#8217;s running on so that once a cloud is launched they have a better idea of what it&#8217;s capable of doing, rather than staying conservative with resource allocation. Because once you launch, it&#8217;s hard to know.</p>
+<p>I have done a bit of work around <a href="http://serverascode.com/2013/02/20/overcommitting-with-kvm.html">over committing with <span class="caps">KVM</span></a>, so of course that interests me. :)</p>
+<p>We&#8217;ll see if we can fit in a hackday sometime in the future.</p>
+<h2>What we decided about meetings</h2>
+<p>- We would like to have monthly meetings, though we will probably not have meetings in July, August, and December, so we&#8217;ll have 7 more meetings this calendar year.<br />
+- At the next meeting we would like to talk about some of the new things that have changed in OpenStack since our last meeting in June of 2012 (which was a long time ago), and considering the rate of development in OpenStack, a lot has changed. There was a lot of interest in how OpenStack operators are using and troubleshooting Quantum, ie. software defined networking.<br />
+- Hopefully at the next meeting we&#8217;ll also be able to bring in some of the people that are <a href="http://www.openstack.org/blog/2013/02/bring-on-the-crazy-zero-to-book-in-five-days/">writing an OpenStack operators manual in five days</a>!<br />
+- Everyone seemed to like the Bluejeans video/voice conference system, so that&#8217;s a good sign for future meetings.</p>
+<h2>Todo</h2>
+<p>- Anita suggested we set up an <span class="caps">IRC</span> channel. I&#8217;ll be looking into this soon.<br />
+- Setup a poll with a possible monthly date, eg. the 3rd Thursday, or 2nd Tuesday kind of thing, and set the time and date for the March meeting.</p>
+<p>As always, if you have suggestions, comments, criticisms or corrections, please let me know in the comments or by tweeting <a href="http://twitter.com/canstack">@canstack</a> and I will make sure to update this post.</p>
+<p>Thanks,<br />
+<a href="http://twitter.com/serverascode">Curtis</a>.</p>
