@@ -2,6 +2,10 @@
 layout: post
 title: OpenStack's 3rd Birthday
 ---
+*Posted by [curtis](http://serverascode.com)*
+
+*****
+
 
 Recently the [OpenStack](http://openstack.org) project celebrated it's [3rd birthday](http://www.openstack.org/birthday). 
 

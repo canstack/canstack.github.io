@@ -2,6 +2,10 @@
 layout: post
 title: Virtual computing lab OpenStack reference architecture
 ---
+*Posted by [curtis](http://serverascode.com)*
+
+*****
+
 
 One of the projects that I work on at [Cybera](http://cybera.ca) is a [virtual computing lab](http://www.cybera.ca/projects/virtual-computing-lab). This project uses [Apache VCL](https://cwiki.apache.org/VCL/) backed by [OpenStack](http://openstack.org) to provide users the ability to use, and reserve, virtual machines to use for their classes. Typically this means making a reservation through VCL and being able to login to a remote Windows instance to access software they otherwise might only be able to use in a physical computing lab.
 

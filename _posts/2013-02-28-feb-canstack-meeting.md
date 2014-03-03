@@ -2,6 +2,10 @@
 layout: post
 title: Wrap up of Feb 2013 CanStack Meeting
 ---
+*Posted by [curtis](http://serverascode.com)*
+
+*****
+
 
 On Thursday, February 28th, 2013, ten people called in from across Canada--and the world actually as we had one caller log in from Bangalore--to talk about what's happening with regards to OpenStack in Canada.
 
