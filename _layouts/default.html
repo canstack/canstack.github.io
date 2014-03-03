@@ -31,7 +31,17 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item active" href="/">Home</a>
+            {% for link in site.navigation %}
+              {% assign current = nil %}
+              {% if page.url == link.url or page.layout == link.layout %}
+                {% assign current = 'active' %}
+              {% endif %}
+              <a class="blog-nav-item {{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+            {% endfor %}
+
+
+
+
         </nav>
       </div>
     </div>
@@ -73,8 +83,6 @@
     </div><!-- /.container -->
 
     <div class="blog-footer">
-      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-      <p>
         <a href="#">Back to top</a>
       </p>
     </div>
