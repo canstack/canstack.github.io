@@ -1,6 +1,7 @@
 name: canstack
 markdown: kramdown
 pygments: true
+url: http://canstack.ca
 
 
 navigation:
